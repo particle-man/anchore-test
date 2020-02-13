@@ -1,4 +1,16 @@
 {
+  "id": "default0",
+  "version": "1_0",
+  "name": "My Default bundle",
+  "comment": "My system's default bundle",
+  "whitelisted_images": [],
+  "blacklisted_images": [],
+  "mappings": [],
+  "whitelists": [],
+  "policies": ["DefaultPolicy"]
+}
+
+{
   "name": "DefaultPolicy",
   "version": "1_0",
   "comment": "Policy for basic checks",
