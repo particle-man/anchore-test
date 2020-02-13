@@ -1,1 +1,1 @@
-FROM python:3.8-slim
+FROM percona/percona-xtradb-cluster:5.7
