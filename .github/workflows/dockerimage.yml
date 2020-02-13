@@ -12,6 +12,5 @@ jobs:
         image-reference: "localbuild/testimage:latest"
         dockerfile-path: "./Dockerfile"
         custom-policy-path: ".anchore/custom_policy.json"
-        debug: true
     - name: anchore inline scan JSON results
       run: for j in `ls ./anchore-reports/*.json`; do echo "---- ${j} ----"; cat ${j}; echo; done
