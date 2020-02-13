@@ -82,7 +82,7 @@
                         }, 
                         {
                             "name": "severity", 
-                            "value": "negligible"
+                            "value": "low"
                         }, 
                         {
                             "name": "vendor_only", 
