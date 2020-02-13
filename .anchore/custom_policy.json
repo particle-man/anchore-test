@@ -82,15 +82,11 @@
                         }, 
                         {
                             "name": "severity", 
-                            "value": "medium"
+                            "value": "negligible"
                         }, 
                         {
                             "name": "vendor_only", 
-                            "value": "false"
-                        },
-                        {
-                            "name": "fix_available", 
-                            "value": "false"
+                            "value": "true"
                         }
                     ], 
                     "trigger": "package"
@@ -145,55 +141,7 @@
                     "id": "3e79ea94-18c4-4d26-9e29-3b9172a62c2e", 
                     "params": [], 
                     "trigger": "vulnerability_data_unavailable"
-                }, 
-                {
-                    "action": "WARN", 
-                    "gate": "vulnerabilities", 
-                    "id": "6063fdde-b1c5-46af-973a-915739451ac4", 
-                    "params": [
-                        {
-                            "name": "package_type", 
-                            "value": "all"
-                        }, 
-                        {
-                            "name": "severity_comparison", 
-                            "value": ">="
-                        }, 
-                        {
-                            "name": "severity", 
-                            "value": "high"
-                        }, 
-                        {
-                            "name": "vendor_only", 
-                            "value": "false"
-                        }, 
-                        {
-                            "name": "fix_available", 
-                            "value": "false"
-                        }
-                    ], 
-                    "trigger": "package"
-                }, 
-                {
-                    "action": "WARN", 
-                    "gate": "vulnerabilities", 
-                    "id": "b30e8abc-444f-45b1-8a37-55be1b8c8bb5", 
-                    "params": [
-                        {
-                            "name": "package_type", 
-                            "value": "all"
-                        }, 
-                        {
-                            "name": "severity_comparison", 
-                            "value": ">="
-                        }, 
-                        {
-                            "name": "severity", 
-                            "value": "critical"
-                        }
-                    ], 
-                    "trigger": "package"
-                }
+                } 
             ], 
             "version": "1_0"
         }
