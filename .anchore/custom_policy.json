@@ -86,7 +86,11 @@
                         }, 
                         {
                             "name": "vendor_only", 
-                            "value": "true"
+                            "value": "false"
+                        },
+                        {
+                            "name": "fix_available", 
+                            "value": "false"
                         }
                     ], 
                     "trigger": "package"
@@ -161,11 +165,11 @@
                         }, 
                         {
                             "name": "vendor_only", 
-                            "value": "true"
+                            "value": "false"
                         }, 
                         {
                             "name": "fix_available", 
-                            "value": "true"
+                            "value": "false"
                         }
                     ], 
                     "trigger": "package"
