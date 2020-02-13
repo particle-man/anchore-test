@@ -17,7 +17,7 @@ jobs:
         sudo mkdir -p "${GOPATH}"/src/github.com/kubeflow
     - uses: actions/setup-python@v1
       with:
-        python-version: '3.8.0'
+        python-version: '3.8.1'
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag localbuild/testimage:latest
     - uses: anchore/scan-action@master
