@@ -5,25 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Install Golang
-      uses: actions/setup-go@v1
-      with:
-        go-version: '1.10.x'
-    - run: |
-        echo "::set-env name=GOPATH::$(go env GOPATH)"
-        echo "::add-path::$(go env GOPATH)/bin"
-        echo "${GOPATH}"
-        id
-        sudo mkdir -p "${GOPATH}"/src/github.com/kubeflow
-    - uses: actions/setup-python@v1
-      with:
-        python-version: '3.8.1'
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag localbuild/testimage:latest
     - uses: anchore/scan-action@master
       with:
         image-reference: "localbuild/testimage:latest"
-        dockerfile-path: "./build/images/tf_operator/Dockerfile"
-        fail-build: false
+        dockerfile-path: "./Dockerfile"
+        fail-build: true
     - name: anchore inline scan JSON results
       run: for j in `ls ./anchore-reports/*.json`; do echo "---- ${j} ----"; cat ${j}; echo; done
